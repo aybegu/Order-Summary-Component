@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+ 
+:root{
+    --Pale-blue: hsl(225, 73%, 90%);
+    --Bright-blue: rgb(56, 41, 224);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --plan-background: hsl(208, 62%, 96%);
+    --Desaturated-blue: rgb(114, 128, 167);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Button-background:  rgb(82, 120, 226);
+    --background: hsl(225, 100%, 94%);
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    margin: 0; /* sayfa buyuk geldigi icin scroll tusu geliyodu */
+    padding: 0;
+    width: 100%;
+}
+
+.background{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.card{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0px 19px 30px 0px rgba(56, 41, 224, 0.16);
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.info{
+    
+    margin: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.title{
+    font-size: 27px;
+    font-weight: 900; 
+    color: var(--Dark-blue);
+    margin: 0;
+    padding: 0;
+}
+
+.text{
+    margin: 0 1rem 1rem 1rem;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.plan{
+    width: 100%;
+    background-color: var(--Very-pale-blue);
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+}
+
+.plan div{
+    display: flex;
+    column-gap: 1rem;  /* yan yana olan bosluk */
+    align-items: center;
+}
+
+.plan-info{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+.icon{
+    padding: 0;
+    margin: 0;
+}
+
+.ann-plan{
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.price{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.link{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.link:hover{
+    color: var(--Button-background);
+    text-decoration: none;
+}
+
+.pay-button{
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: .7rem;
+    box-shadow: 0px 12px 25px 0px rgba(56, 41, 224, 0.3);
+    margin: 1rem;
+}
+
+.pay-button:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+.cancel-button{
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    color: var(--Desaturated-blue);
+}
+
+.cancel-button:hover{
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 1rem;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
